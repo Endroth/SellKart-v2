@@ -313,6 +313,11 @@ public class SellPlugin extends JavaPlugin implements Listener, TabExecutor {
     }
 
     private String money(double v) { return "$" + fmt.format(v); }
+    
+public String formatMoney(double v) {
+    return money(v);
+}
+
 
     private ItemStack buildButton(double total) {
         ItemStack b = new ItemStack(Material.LIME_STAINED_GLASS_PANE);
